@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Atividade 3</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="#home" class="home"
+              ><img src="./images/botao-de-inicio.png" alt="" />Início</a
+            >
+          </li>
+          <li><a href="#site">Sites</a></li>
+          <li><a href="#apps">Aplicativos</a></li>
+          <li><a href="#pwa">PWA</a></li>
+          <li><a href="#analise">Análise Comparativa</a></li>
+          <li><a href="#ref">Referências</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="section" id="home">
+      <div class="container-home">
+        <h1>SITES, APLICATIVOS NÁTIVOS E PROGRESSIVE WEB APPS (PWAS)</h1>
+        <p>Uma Análise Comparativa</p>
+      </div>
+    </section>
+    <section class="section" id="site">
+      <article>
+        <h2>Sites</h2>
+        <div class="container">
+          <div class="content">
+            <h3>Principais Características</h3>
+            <p>
+              Um site, ou aplicativo web tradicional, é uma aplicação construída
+              com tecnologias como HTML, CSS e JavaScript, executada
+              inteiramente dentro de um navegador. Não é necessário instalar
+              nada no dispositivo do usuário: basta acessar um endereço (URL)
+              para que o conteúdo seja carregado a partir de um servidor
+              remoto.<br /><br />
+              Essa característica torna o site multiplataforma por natureza, já
+              que qualquer dispositivo com um navegador atualizado — computador,
+              smartphone ou tablet, independentemente do sistema operacional —
+              consegue acessá-lo sem barreiras.
+            </p>
+          </div>
+          <div class="content">
+            <div class="vantagens">
+              <h4>Vantagens</h4>
+              <ul class="lista-VD">
+                <li>
+                  Baixo custo de desenvolvimento e manutenção, já que existe
+                  apenas uma base de código para todas as plataformas;
+                </li>
+                <li>
+                  Facilidade de distribuição, pois não depende de aprovação em
+                  lojas de aplicativos;
+                </li>
+                <li>
+                  Atualizações imediatas: basta alterar o conteúdo no servidor
+                  para que todos os usuários vejam a versão mais recente.
+                </li>
+              </ul>
+            </div>
+            <div class="desvantagens">
+              <h4>Desvantagens</h4>
+              <ul class="lista-VD">
+                <li>
+                  Dependem de conexão constante com a internet para funcionar;
+                </li>
+                <li>
+                  Acesso restrito a recursos nativos do dispositivo (câmera,
+                  GPS, sensores e notificações push), embora parte desses
+                  recursos venha sendo progressivamente disponibilizada por APIs
+                  web;
+                </li>
+                <li>
+                  Desempenho e fluidez geralmente inferiores aos de um
+                  aplicativo instalado localmente, especialmente em interações
+                  mais complexas.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+    <section class="section" id="apps">
+      <article>
+        <h2>Aplicativos Nativos</h2>
+        <div class="container">
+          <div class="content">
+            <h3>Principais Características</h3>
+            <p>
+              Aplicativos nativos são desenvolvidos especificamente para um
+              sistema operacional, utilizando as linguagens e ferramentas
+              oficiais de cada plataforma — por exemplo, Kotlin ou Java para
+              Android, e Swift ou Objective-C para iOS. <br />
+              <br />
+              Esse tipo de aplicativo é instalado diretamente no dispositivo,
+              geralmente por meio de lojas oficiais como a Google Play Store ou
+              a Apple App Store, passando por processos de revisão e aprovação
+              definidos por cada plataforma antes de ficar disponível ao
+              público. Por serem construídos sob medida para o sistema em que
+              rodam, têm acesso completo aos recursos de hardware do
+              dispositivo.
+            </p>
+          </div>
+          <div class="content">
+            <div class="vantagens">
+              <h4>Vantagens</h4>
+              <ul class="lista-VD">
+                <li>
+                  Melhor desempenho: otimizados para a arquitetura específica de
+                  cada sistema operacional, tendem a ser mais rápidos e
+                  responsivos, especialmente em tarefas que exigem processamento
+                  intenso, como jogos e edição de mídia;
+                </li>
+                <li>
+                  Melhor experiência de usuário, seguindo os padrões visuais e
+                  de interação de cada plataforma;
+                </li>
+                <li>
+                  Acesso irrestrito aos recursos do dispositivo (câmera, GPS,
+                  sensores de movimento, contatos, armazenamento local,
+                  notificações push);
+                </li>
+                <li>
+                  Podem funcionar total ou parcialmente sem conexão com a
+                  internet.
+                </li>
+              </ul>
+            </div>
+            <div class="desvantagens">
+              <h4>Desvantagens</h4>
+              <ul class="lista-VD">
+                <li>
+                  Exigem, normalmente, a criação e manutenção de duas bases de
+                  código distintas (Android e iOS), aumentando tempo e
+                  investimento;
+                </li>
+                <li>
+                  Distribuição depende da aprovação das lojas de aplicativos, o
+                  que pode gerar atrasos em lançamentos e atualizações;
+                </li>
+                <li>
+                  O usuário precisa baixar e instalar o aplicativo antes de
+                  utilizá-lo, o que pode representar uma barreira de adoção.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+    <section class="section" id="pwa">
+      <article>
+        <h2>Progressive Web Apps (PWA)</h2>
+        <div class="container">
+          <div class="content">
+            <h3>Principais Características</h3>
+            <p>
+              Os PWAs são aplicações web desenvolvidas com tecnologias
+              tradicionais da internet — HTML, CSS e JavaScript — mas que
+              incorporam recursos modernos do navegador para se comportar de
+              maneira semelhante a um aplicativo nativo. <br />
+              Um PWA pode ser "instalado" na tela inicial do dispositivo sem
+              passar pelas lojas de aplicativos, funcionar parcialmente offline
+              por meio de tecnologias como o Service Worker, enviar notificações
+              push e carregar de forma mais rápida do que um site convencional
+              em acessos subsequentes. <br />
+              Tecnicamente, continua sendo executado a partir de um navegador,
+              mas utiliza um arquivo de manifesto (web app manifest) que define
+              ícone, nome, cores e comportamento de tela cheia, aproximando a
+              experiência do usuário à de um app nativo.
+            </p>
+          </div>
+          <div class="content">
+            <div class="vantagens">
+              <h4>Vantagens</h4>
+              <ul class="lista-VD">
+                <li>
+                  Uma única base de código para todas as plataformas, reduzindo
+                  custo e tempo de desenvolvimento em comparação aos apps
+                  nativos;
+                </li>
+                <li>
+                  Possibilidade de instalação e funcionamento offline (parcial);
+                </li>
+                <li>
+                  Atualizações automáticas e imediatas, sem depender de
+                  aprovação em lojas de aplicativos;
+                </li>
+                <li>
+                  Menor tamanho de armazenamento no dispositivo em comparação a
+                  um app nativo equivalente.
+                </li>
+              </ul>
+            </div>
+            <div class="desvantagens">
+              <h4>Desvantagens</h4>
+              <ul class="lista-VD">
+                <li>
+                  Acesso incompleto a determinados recursos nativos do
+                  dispositivo, sobretudo em iOS, cujo navegador (Safari/WebKit)
+                  impõe restrições mais rígidas;
+                </li>
+                <li>
+                  Suporte limitado a notificações push e a determinados sensores
+                  em dispositivos Apple;
+                </li>
+                <li>
+                  Desempenho superior ao de um site tradicional, mas ainda
+                  abaixo do de um app nativo em tarefas que exigem alto
+                  processamento gráfico ou de dados.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+    <section class="section" id="analise">
+      <article>
+        <h2>Análise Comparativa</h2>
+        <div class="container">
+          <table class="tabela-comparativa">
+            <thead>
+              <tr>
+                <th>Critério</th>
+                <th>Sites</th>
+                <th>Apps Nativos</th>
+                <th>PWAs</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Custo e complexidade</strong></td>
+                <td>Baixo — base de código única</td>
+                <td>Alto — bases separadas para Android/iOS</td>
+                <td>Baixo — base de código única</td>
+              </tr>
+              <tr>
+                <td><strong>Desempenho</strong></td>
+                <td>Mais limitado (depende do servidor)</td>
+                <td>Melhor (otimizado por SO)</td>
+                <td>Intermediário</td>
+              </tr>
+              <tr>
+                <td><strong>Distribuição</strong></td>
+                <td>Acesso direto por URL, sem lojas</td>
+                <td>Requer aprovação em lojas</td>
+                <td>Acesso por URL, sem lojas</td>
+              </tr>
+              <tr>
+                <td><strong>Instalação</strong></td>
+                <td>Não instala; roda no navegador</td>
+                <td>Instalação via loja</td>
+                <td>"Instalável" na tela inicial</td>
+              </tr>
+              <tr>
+                <td><strong>Atualizações</strong></td>
+                <td>Imediatas</td>
+                <td>Dependem de aprovação da loja</td>
+                <td>Imediatas e automáticas</td>
+              </tr>
+              <tr>
+                <td><strong>Acesso a recursos do dispositivo</strong></td>
+                <td>Restrito</td>
+                <td>Irrestrito</td>
+                <td>Parcial (restrições no iOS)</td>
+              </tr>
+              <tr>
+                <td><strong>Funcionamento offline</strong></td>
+                <td>Não funciona</td>
+                <td>Funciona totalmente</td>
+                <td>Funciona parcialmente</td>
+              </tr>
+              <tr>
+                <td><strong>Indicado para</strong></td>
+                <td>Conteúdo institucional, blogs</td>
+                <td>Apps de alto desempenho, jogos</td>
+                <td>Alternativa intermediária, e-commerce</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+    </section>
+    <section class="referencias section" id="ref">
+      <h2>Referências</h2>
+      <div class="content-ref">
+        <ul class="lista-referencias">
+          <li>
+            ALURA.
+            <em
+              >Tipos de aplicativos: o que são apps nativos, web e híbridos?</em
+            >
+            [S. l.]: Alura Cursos Online, [2026?]. Disponível em:
+            <a
+              href="https://www.alura.com.br/artigos/tipos-de-aplicativos"
+              target="_blank"
+              rel="noopener noreferrer"
+              >alura.com.br</a
+            >. Acesso em: 16 ago. 2026.
+          </li>
+          <li>
+            APONTAMENTO acerca do Progressive Web Apps. In: JORNADA
+            INTERNACIONAL GEMINIS, 3. Disponível em:
+            <a
+              href="https://grcmlesydpcd.objectstorage.sa-saopaulo-1.oci.customer-oci.com/p/OQwcvnO-c63O08Gc2Kv4OTbJttj5ik60dguiDIyyQ0wuo5SWn-jHOLW9wNbylNqI/n/grcmlesydpcd/b/dtysppobjmntbkp01/o/media/doity/submissoes/artigo-6d73074b34b7631db712c0472463b10b08ed8ea4-arquivo.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              >artigo em PDF</a
+            >.
+          </li>
+          <li>
+            PWA VS Native vs Web App: which should you choose?. [S. l.: s. n.],
+            [2026?]. Disponível em:
+            <a
+              href="https://www.edgeoftheweb.co.uk/blog/pwa-vs-native-vs-web-app-which-should-you-choose"
+              target="_blank"
+              rel="noopener noreferrer"
+              >edgeoftheweb.co.uk</a
+            >. Acesso em: 16 ago. 2026.
+          </li>
+          <li>
+            APLICATIVOS Web Progressivos: vantagens e desvantagens. [S. l.: s.
+            n.], [2026?]. Disponível em:
+            <a
+              href="https://webtoapp.design/blog/pt_BR/progressive-web-apps"
+              target="_blank"
+              rel="noopener noreferrer"
+              >webtoapp.design</a
+            >. Acesso em: 16 ago. 2026.
+          </li>
+          <li>
+            GABRIEL DEVS.
+            <em>O que é uma PWA (Progressive Web App) e quando criar uma.</em>
+            Disponível em:
+            <a
+              href="https://www.gabrieldevs.com.br/2026/07/o-que-e-uma-pwa-progressive-web-app-e.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              >gabrieldevs.com.br</a
+            >. Acesso em: 16 ago. 2026.
+          </li>
+          <li>
+            ROCK CONTENT.
+            <em>O que são os PWA e qual a diferença para apps nativos?</em>
+            Disponível em:
+            <a
+              href="https://rockcontent.com/br/blog/o-que-sao-pwa-qual-diferenca-aplicativos-nativos/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >rockcontent.com</a
+            >. Acesso em: 16 ago. 2026.
+          </li>
+          <li>
+            USINA DE PESQUISA.
+            <em
+              >Progressive Web Apps (PWA) no desenvolvimento de aplicativos.</em
+            >
+            Disponível em:
+            <a
+              href="https://www.usinadepesquisa.com/?p=7215"
+              target="_blank"
+              rel="noopener noreferrer"
+              >usinadepesquisa.com</a
+            >. Acesso em: 16 ago. 2026.
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-col">
+          <h3>Sobre o trabalho</h3>
+          <p>
+            Trabalho de Desenvolvimento Web no curso de Análise e Desenvolvimento
+            de Sistemas.
+          </p>
+          <p>
+            <strong>Fatec Sorocaba</strong> — Faculdade de Tecnologia de
+            Sorocaba
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h3>Navegação</h3>
+          <ul class="footer-links">
+            <li><a href="#site">Sites</a></li>
+            <li><a href="#apps">Aplicativos</a></li>
+            <li><a href="#pwa">PWA</a></li>
+            <li><a href="#analise">Análise Comparativa</a></li>
+            <li><a href="#ref">Referências</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Autor</h3>
+          <p>Luís Henrique Ribeiro Barrile</p>
+          <p>Sorocaba - SP, 2026</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
