@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
+
+
+:root {
+    --fundo: #f3f3f3;
+    --papel: #ffffff;
+    --tinta: #2e2e2e;
+    --tinta-suave: #6b6b6b;
+    --principal: #b5121b;   
+    --vinho: #8a0e15;       
+    --vermelho: #d62828;    
+    --borda: #d9d9d9;
+    --bege: #f5dcdc;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.data {
+    text-align: center;
+    padding: 2px 0;
+    background-color: var(--vinho);
+    color: var(--bege);
+    font-family: 'Inter';
+    font-weight: 700;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 5px solid var(--principal);
+}
+
+.header h1 {
+    font-family: 'PlayFair';
+    font-size: 50px;
+    color: var(--principal);
+}
+
+.header span {
+    color: var(--vermelho);
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.nav a {
+    text-decoration: none;
+    color: var(--tinta);
+}
+
+.nav a:hover {
+    border-bottom: 2px solid var(--vermelho);
+}
+
+.destaques {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 24px;
+    margin: 32px auto;
+    width: 80%;
+}
+
+.img {
+    background-color: var(--principal);
+    border: 1px solid var(--borda);
+}
+
+.principal {
+    background-color: var(--papel);
+    border: 1px solid var(--borda);
+}
+
+.principal .img {
+    aspect-ratio: 16 / 8;
+}
+
+
+.principal .conteudo { 
+    padding: 22px 24px; 
+}
+    
+.principal h2 {
+    font-size: 40px;
+    font-weight: 800;
+    margin: 8px 0 12px;
+    color: var(--tinta);
+}
+.principal p { 
+    font-size: 17px;
+    color: var(--tinta-suave);
+}
+ 
+.categoria {
+    display: inline-block;
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--vermelho);
+}
+
+.data-post {
+    font-size: 10px;
+    padding: 10px;
+}
+
+.ultimas {
+    padding: 20px;
+    border: 1px solid var(--borda);
+    background-color: var(--papel);
+}
+
+.ultimas h3 {
+    font-size: 20px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid var(--principal);
+    margin-bottom: 5px;
+}
+
+.ultimas ul {
+    list-style: none;
+}
+
+.ultimas li {
+    padding: 15px 0;
+    border-bottom: 1px solid var(--borda);
+}
+
+.ultimas li:last-child {
+    border-bottom: none;
+}
+
+.ultimas h4 {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--tinta);
+}
+
+.ultimas p {
+    color: var(--tinta-suave);
+}
+
+.mais-titulo {
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 18px;
+    padding-left: 10px;
+    border-left: 3px solid var(--principal);
+}
+
+/* .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fix, minmax(250px, 1fr));
+    gap: 24px;
+    margin-bottom: 40px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--papel);
+    border: 1px solid var(--borda);
+}
+
+.card .img {
+    aspect-ratio: 16 / 10;
+} */
+
+.mais-noticias {
+    width: 80%;
+    margin: 0 auto;
+}
+.cards {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        'a b c'
+        'd e f'
+    ;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--papel);
+    border: 1px solid var(--borda);
+    width: 300px;
+}
+
+.card .img {
+    aspect-ratio: 16 / 10;
+}
+
+.card .categoria {
+    padding: 8px 10px;
+}
+
+.card h3 {
+    padding: 5px 10px;
+    color: var(--tinta);
+}
+
+.card p {
+    padding: 10px;
+    color: var(--tinta-suave);
+}
+
+
+
+footer {
+    background: var(--tinta);
+    color: #d0d0d0;
+    margin-top: 20px;
+    padding: 32px 0;
+    font-size: 0.92rem;
+}
+.rodape {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+footer .logo { 
+    color: #fff;
+    font-size: 1.4rem; 
+}
+
+footer ul { 
+    list-style: none; 
+    display: flex; 
+    gap: 18px; 
+    flex-wrap: wrap; 
+}
+
+footer a {
+    color: #fff;
+    margin: 30px;
+}
+
+footer a:hover {
+    text-decoration: underline; 
+}
