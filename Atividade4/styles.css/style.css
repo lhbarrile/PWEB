@@ -256,3 +256,16 @@ footer a {
 footer a:hover {
     text-decoration: underline; 
 }
+
+.img {
+    background-color: var(--principal);
+    border: 1px solid var(--borda);
+    overflow: hidden;
+}
+
+.img img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
